@@ -4,7 +4,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var dotenv = require("dotenv")
 dotenv.config();
-var cors = require("cors")
+// var cors = require("cors")
 var authentication = require("./middlewares/authentification");
 
 
@@ -17,7 +17,7 @@ var connexionsRouter = require("./routes/connexions")
 
 var app = express();
 
-app.use(cors());
+// app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
